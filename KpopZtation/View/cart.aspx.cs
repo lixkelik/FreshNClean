@@ -63,7 +63,7 @@ namespace KpopZtation.View
         protected void cartGrid_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             GridViewRow row = cartGrid.Rows[e.RowIndex];
-            int id = int.Parse(row.Cells[1].Text);
+            int id = int.Parse(row.Cells[0].Text);
             errorLbl.Visible = true;
             errorLbl.CssClass = "success-message";
             errorLbl.Text = cartController.DeleteCartItem(id);

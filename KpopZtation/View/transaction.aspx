@@ -14,18 +14,13 @@
                     <asp:BoundField DataField="TransactionID" HeaderText="Transaction ID" SortExpression="TransactionID" ItemStyle-Width="120px"/>
                     <asp:BoundField DataField="TransactionDate" HeaderText="Transaction Date" SortExpression="TransactionDate" ItemStyle-Width="180px"/>
                     <asp:BoundField DataField="Customer.CustomerName" HeaderText="Customer Name" SortExpression="Customer.CustomerName" />
-                    <asp:TemplateField HeaderText="Album Order List">
+                    <asp:TemplateField HeaderText="Laundry Order List">
                         <ItemTemplate>
                             <asp:GridView ID="transactionDetailGrid" runat="server" AutoGenerateColumns="false" CssClass="transaction-detail-grid">
                                 <Columns>
-                                    <asp:TemplateField HeaderText="Album Image">
-                                        <ItemTemplate>
-                                            <asp:Image ID="AlbumImage" runat="server" ImageUrl='<%# Eval("Album.AlbumImage") %>' CssClass="album-image" />
-                                        </ItemTemplate>
-                                    </asp:TemplateField>
-                                    <asp:BoundField DataField="Album.AlbumName" HeaderText="Album Name" SortExpression="Album.AlbumName" />
+                                    <asp:BoundField DataField="Service.ServiceName" HeaderText="Service Type" SortExpression="Service.ServiceName" />
                                     <asp:BoundField DataField="Qty" HeaderText="Quantity" SortExpression="TransactionDetail.Qty" />
-                                    <asp:BoundField DataField="Album.AlbumPrice" HeaderText="Album Price" SortExpression="Album.AlbumPrice" />
+                                    <asp:BoundField DataField="Service.ServicePrice" HeaderText="Service Price" SortExpression="Service.ServicePrice" />
                                 </Columns>
                             </asp:GridView>
                         </ItemTemplate>

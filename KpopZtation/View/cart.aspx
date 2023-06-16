@@ -10,16 +10,17 @@
     <div class="cart-grid">
         <asp:GridView ID="cartGrid" runat="server" AutoGenerateColumns="False" OnRowDeleting="cartGrid_RowDeleting" CssClass="grid-view">
             <Columns>
-                <asp:TemplateField HeaderText="Album Image">
-                    <ItemTemplate>
-                        <asp:Image ID="AlbumImage" runat="server" ImageUrl='<%# Eval("Album.AlbumImage") %>' CssClass="album-image" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:BoundField DataField="Album.AlbumId" HeaderText="ID" SortExpression="AlbumId" HeaderStyle-CssClass="Hide" ItemStyle-CssClass="Hide"/>
-                <asp:BoundField DataField="Album.AlbumName" HeaderText="Name" SortExpression="AlbumName" />
+                <asp:BoundField DataField="Service.ServiceId" HeaderText="ID" SortExpression="ServiceId" HeaderStyle-CssClass="Hide" ItemStyle-CssClass="Hide">
+<HeaderStyle CssClass="Hide"></HeaderStyle>
+
+<ItemStyle CssClass="Hide"></ItemStyle>
+                </asp:BoundField>
+                <asp:BoundField DataField="Service.ServiceName" HeaderText="Name" SortExpression="ServiceName" />
                 <asp:BoundField DataField="Qty" HeaderText="Quantity" SortExpression="Qty" />
-                <asp:BoundField DataField="Album.AlbumPrice" HeaderText="Price" SortExpression="AlbumPrice" />
-                <asp:CommandField ButtonType="Button" DeleteText="Remove" ShowDeleteButton="True" ControlStyle-CssClass="btn" />
+                <asp:BoundField DataField="Service.ServicePrice" HeaderText="Price" SortExpression="ServicePrice" />
+                <asp:CommandField ButtonType="Button" DeleteText="Remove" ShowDeleteButton="True" ControlStyle-CssClass="btn" >
+<ControlStyle CssClass="btn"></ControlStyle>
+                </asp:CommandField>
             </Columns>
             <HeaderStyle CssClass="grid-view-header" />
         </asp:GridView>
