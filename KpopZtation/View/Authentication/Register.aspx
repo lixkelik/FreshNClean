@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="../StyleCSS/formStyle.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="center-containerUp">
+    <div class="center-contain">
         <asp:Label ID="register" runat="server" Text="Create your account" Font-Bold="True" Font-Size="XX-Large" Height="70px"></asp:Label>
         <div class="form-group">
             <asp:Label ID="namelbl" runat="server" Text="Name" CssClass="label-top-left"></asp:Label>

@@ -1235,7 +1235,6 @@
     <Content Include="View\StyleCSS\detailAlbumStyle.css" />
     <Content Include="View\StyleCSS\detailArtistStyle.css" />
     <Content Include="View\StyleCSS\editStyle.css" />
-    <Content Include="View\StyleCSS\guestNavBarStyle.css" />
     <Content Include="View\StyleCSS\homeStyles.css" />
     <Content Include="View\ServiceFolder\detail_service.aspx" />
     <Content Include="View\ServiceFolder\edit_service.aspx" />

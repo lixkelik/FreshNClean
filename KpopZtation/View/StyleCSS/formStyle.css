@@ -90,11 +90,8 @@ h2 {
 }
 
 .center-contain {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -200px;
-    margin-top: -300px;
+    position: center;
+    margin: 70px auto;
     max-width: 400px;
     padding: 20px;
     background-color: #fff;

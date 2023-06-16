@@ -3,7 +3,7 @@
     <link rel="stylesheet" href="../StyleCSS/formStyle.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="center-containerUp">
+    <div class="center-contain">
         <h2>Login</h2>
         <div class="form-group">
             <asp:Label ID="emailLbl" runat="server" Text="Email" CssClass="label-top-left"></asp:Label>
