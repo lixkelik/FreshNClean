@@ -1,0 +1,119 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #C8F0F2;
+}
+
+/*Navbar*/
+.navBar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .navBar .left {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .navBar .companyLogo {
+        background: url('../../Assets/companyLogo.png');
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 47px;
+        height: 50px;
+    }
+
+    .navBar .companyName {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 30px;
+        color: #689E99;
+    }
+
+        .navBar .companyName span {
+            color: #E4843F;
+        }
+
+    .navBar .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 47px;
+    }
+
+    .navBar .right {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        color: #303030;
+    }
+
+        .navBar .right #home, #cart, #transaction, #profile {
+            text-decoration: none !important;
+        }
+
+        .navBar .right #home:hover, #cart:hover, #transaction:hover, #profile:hover {
+            color: rgba(228, 132, 63);
+            cursor: pointer;
+        }
+
+
+
+.navBar #logoutBtn{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none !important;
+    color: #ffffff;
+    text-align: center;
+    width: 153px;
+    height: 60px;
+    background-color: #689E99;
+    border-radius: 10px;
+    border: none;
+}
+.navBar #authornav, #authornav1 {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none !important;
+    color: #ffffff;
+    text-align: center;
+    width: 153px;
+    height: 60px;
+    background-color: #689E99;
+    border-radius: 10px;
+    border: none;
+}
+
+/*Footer*/
+.footer {
+    background-color: #689E99;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 19px;
+}
+
+.footer h1 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.footer p {
+    font-weight: 400;
+    font-size: 15px;
+}

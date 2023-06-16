@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Guest.master.cs" Inherits="KpopZtation.View.Master.Guest" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../StyleCSS/authorizedNavBarStyle.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navBar">
+            <div class="left">
+                <div class="companyLogo"></div>
+                <div class="companyName">
+                    <h1>Fresh n'<span>Clean</span></h1>
+                </div>
+            </div>
+            <div class="right">
+                <asp:HyperLink ID="home" runat="server" NavigateUrl="~/View/home.aspx" Text="Home"></asp:HyperLink>
+                <asp:HyperLink ID="authornav" runat="server" NavigateUrl="~/View/Authentication/Login.aspx" Text="Login"></asp:HyperLink>
+                <asp:HyperLink ID="authornav1" runat="server" NavigateUrl="~/View/Authentication/Register.aspx" Text="Register"></asp:HyperLink>
+            </div>
+        </div>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer">
+            <h1>&copy; Fresh n’ Clean<br />2023 - PSD Lecture Project</h1>
+            <p>Christopher Felix A., Natasha Grace R., Amelia Cantika P, Michelle Angela A.</p>
+        </div>
+    </form>
+</body>
+</html>

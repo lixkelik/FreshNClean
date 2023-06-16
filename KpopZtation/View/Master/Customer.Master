@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="KpopZtation.View.Master.Customer" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../StyleCSS/authorizedNavBarStyle.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="navBar">
+            <div class="left">
+                <div class="companyLogo"></div>
+                <div class="companyName">
+                    <h1>Fresh n'<span>Clean</span></h1>
+                </div>
+            </div>
+            <div class="right">
+                <asp:HyperLink ID="home" runat="server" NavigateUrl="~/View/home.aspx">Home</asp:HyperLink>
+                <asp:HyperLink ID="cart" runat="server" NavigateUrl="~/View/cart.aspx">Cart</asp:HyperLink>
+                <asp:HyperLink ID="transaction" runat="server" NavigateUrl="~/View/transaction.aspx">Transaction</asp:HyperLink>
+                <asp:HyperLink ID="profile" runat="server" NavigateUrl="~/View/update_profile.aspx">Update Profile</asp:HyperLink>
+                <asp:LinkButton ID="logoutBtn" runat="server" OnClick="logOut_Click" >Logout</asp:LinkButton>
+            </div>
+        </div>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer">
+            <h1>&copy; Fresh n’ Clean<br />2023 - PSD Lecture Project</h1>
+            <p>Christopher Felix A., Natasha Grace R., Amelia Cantika P, Michelle Angela A.</p>
+        </div>
+
+    </form>
+</body>
+</html>
