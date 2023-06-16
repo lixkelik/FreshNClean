@@ -1218,17 +1218,6 @@
     <Content Include="aspnet_client\system_web\4_0_30319\crystalreportviewers13\prompting\js\promptengine_strings_zh_TW.js" />
     <Content Include="aspnet_client\system_web\4_0_30319\crystalreportviewers13\urlreporting\activexviewer.js" />
     <Content Include="aspnet_client\system_web\4_0_30319\crystalreportviewers13\urlreporting\appletviewer.js" />
-    <Content Include="Assets\Albums\638058597622333864.jfif" />
-    <Content Include="Assets\Albums\638058602735846856.jpg" />
-    <Content Include="Assets\Albums\638058717003784490.jpg" />
-    <Content Include="Assets\Albums\638059438205501702.jpg" />
-    <Content Include="Assets\Albums\638059439116596296.jpg" />
-    <Content Include="Assets\Albums\638059442482614063.jfif" />
-    <Content Include="Assets\Albums\638059446920356665.jfif" />
-    <Content Include="Assets\Albums\638059447624756394.jfif" />
-    <Content Include="Assets\Albums\638059449905363164.jpg" />
-    <Content Include="Assets\Albums\638059451370799986.jfif" />
-    <Content Include="Assets\Artists\638057862770194070.jpeg" />
     <Content Include="Assets\bannerImage.png" />
     <Content Include="Assets\companyLogo.png" />
     <Content Include="Model\Model.Context.tt">
@@ -1248,12 +1237,11 @@
     <Content Include="View\StyleCSS\editStyle.css" />
     <Content Include="View\StyleCSS\guestNavBarStyle.css" />
     <Content Include="View\StyleCSS\homeStyles.css" />
-    <Content Include="View\AlbumFolder\detail_album.aspx" />
-    <Content Include="View\AlbumFolder\edit_album.aspx" />
-    <Content Include="View\AlbumFolder\insert_album.aspx" />
-    <Content Include="View\ArtistFolder\detail_artist.aspx" />
-    <Content Include="View\ArtistFolder\edit_artist.aspx" />
-    <Content Include="View\ArtistFolder\insert_artist.aspx" />
+    <Content Include="View\ServiceFolder\detail_service.aspx" />
+    <Content Include="View\ServiceFolder\edit_service.aspx" />
+    <Content Include="View\ServiceFolder\insert_service.aspx" />
+    <Content Include="View\CategoryFolder\detail_category.aspx" />
+    <Content Include="View\CategoryFolder\insert_category.aspx" />
     <Content Include="View\Authentication\Login.aspx" />
     <Content Include="View\Authentication\Register.aspx" />
     <Content Include="View\cart.aspx" />
@@ -1267,8 +1255,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\AlbumController.cs" />
-    <Compile Include="Controller\ArtistController.cs" />
+    <Compile Include="Controller\ServiceController.cs" />
+    <Compile Include="Controller\CategoryController.cs" />
     <Compile Include="Controller\AuthController.cs" />
     <Compile Include="Controller\CartController.cs" />
     <Compile Include="Controller\CustomerController.cs" />
@@ -1279,25 +1267,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Factory\AlbumFactory.cs" />
-    <Compile Include="Factory\ArtistFactory.cs" />
+    <Compile Include="Factory\ServiceFactory.cs" />
+    <Compile Include="Factory\CategoryFactory.cs" />
     <Compile Include="Factory\CartFactory.cs" />
     <Compile Include="Factory\CustomerFactory.cs" />
     <Compile Include="Factory\TransactionDetailFactory.cs" />
     <Compile Include="Factory\TransactionHeaderFactory.cs" />
-    <Compile Include="Handler\AlbumHandler.cs" />
-    <Compile Include="Handler\ArtistHandler.cs" />
+    <Compile Include="Handler\ServiceHandler.cs" />
+    <Compile Include="Handler\CategoryHandler.cs" />
     <Compile Include="Handler\CartHandler.cs" />
     <Compile Include="Handler\CustomerHandler.cs" />
     <Compile Include="Handler\TransactionHandler.cs" />
     <Compile Include="Handler\UserHandler.cs" />
-    <Compile Include="Model\Album.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Model\Artist.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Model\Cart.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Category.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\Customer.cs">
@@ -1318,6 +1303,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Model\Service.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\TransactionDetail.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -1331,53 +1319,46 @@
       <DependentUpon>CrystalReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Repository\AlbumRepo.cs" />
-    <Compile Include="Repository\ArtistRepo.cs" />
+    <Compile Include="Repository\ServiceRepo.cs" />
+    <Compile Include="Repository\CategoryRepo.cs" />
     <Compile Include="Repository\CartRepo.cs" />
     <Compile Include="Repository\CustomerRepo.cs" />
     <Compile Include="Repository\Database.cs" />
     <Compile Include="Repository\TransactionRepo.cs" />
-    <Compile Include="View\AlbumFolder\detail_album.aspx.cs">
-      <DependentUpon>detail_album.aspx</DependentUpon>
+    <Compile Include="View\ServiceFolder\detail_service.aspx.cs">
+      <DependentUpon>detail_service.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\AlbumFolder\detail_album.aspx.designer.cs">
-      <DependentUpon>detail_album.aspx</DependentUpon>
+    <Compile Include="View\ServiceFolder\detail_service.aspx.designer.cs">
+      <DependentUpon>detail_service.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\AlbumFolder\edit_album.aspx.cs">
-      <DependentUpon>edit_album.aspx</DependentUpon>
+    <Compile Include="View\ServiceFolder\edit_service.aspx.cs">
+      <DependentUpon>edit_service.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\AlbumFolder\edit_album.aspx.designer.cs">
-      <DependentUpon>edit_album.aspx</DependentUpon>
+    <Compile Include="View\ServiceFolder\edit_service.aspx.designer.cs">
+      <DependentUpon>edit_service.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\AlbumFolder\insert_album.aspx.cs">
-      <DependentUpon>insert_album.aspx</DependentUpon>
+    <Compile Include="View\ServiceFolder\insert_service.aspx.cs">
+      <DependentUpon>insert_service.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\AlbumFolder\insert_album.aspx.designer.cs">
-      <DependentUpon>insert_album.aspx</DependentUpon>
+    <Compile Include="View\ServiceFolder\insert_service.aspx.designer.cs">
+      <DependentUpon>insert_service.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\ArtistFolder\detail_artist.aspx.cs">
-      <DependentUpon>detail_artist.aspx</DependentUpon>
+    <Compile Include="View\CategoryFolder\detail_category.aspx.cs">
+      <DependentUpon>detail_category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\ArtistFolder\detail_artist.aspx.designer.cs">
-      <DependentUpon>detail_artist.aspx</DependentUpon>
+    <Compile Include="View\CategoryFolder\detail_category.aspx.designer.cs">
+      <DependentUpon>detail_category.aspx</DependentUpon>
     </Compile>
-    <Compile Include="View\ArtistFolder\edit_artist.aspx.cs">
-      <DependentUpon>edit_artist.aspx</DependentUpon>
+    <Compile Include="View\CategoryFolder\insert_category.aspx.cs">
+      <DependentUpon>insert_category.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="View\ArtistFolder\edit_artist.aspx.designer.cs">
-      <DependentUpon>edit_artist.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="View\ArtistFolder\insert_artist.aspx.cs">
-      <DependentUpon>insert_artist.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="View\ArtistFolder\insert_artist.aspx.designer.cs">
-      <DependentUpon>insert_artist.aspx</DependentUpon>
+    <Compile Include="View\CategoryFolder\insert_category.aspx.designer.cs">
+      <DependentUpon>insert_category.aspx</DependentUpon>
     </Compile>
     <Compile Include="View\Authentication\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -1451,13 +1432,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="Model\Model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Model\Model.edmx.diagram">
-      <DependentUpon>Model.edmx</DependentUpon>
-    </Content>
     <Content Include="Dataset\DataSet.xsc">
       <DependentUpon>DataSet.xsd</DependentUpon>
     </Content>
@@ -1468,6 +1442,13 @@
     </None>
     <Content Include="Dataset\DataSet.xss">
       <DependentUpon>DataSet.xsd</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Model\Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Model\Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </Content>
     <None Include="packages.config" />
     <Content Include="View\Master\Admin.Master" />
@@ -1489,6 +1470,9 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\CategoryImg\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

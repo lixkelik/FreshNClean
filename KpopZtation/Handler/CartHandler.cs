@@ -10,26 +10,19 @@ namespace KpopZtation.Handler
 {
     public class CartHandler
     {
-        AlbumController albumController = new AlbumController();
+        ServiceController serviceController = new ServiceController();
         CustomerController custController = new CustomerController();
         TransactionHandler trsHandler = new TransactionHandler();
 
         CartRepo cartRepo = new CartRepo();
-        public string AddAlbumToCart(int albumId, int qty, int customerId)
+        public string AddAlbumToCart(int serviceId, int qty, int customerId)
         {
             Customer cust = custController.GetCustomerById(customerId);
-            Album album = albumController.GetAlbumById(albumId);
+            Service service = serviceController.GetServiceById(serviceId);
 
-            if(cust != null && album != null)
+            if(cust != null && service != null)
             {
-                int stockLeft = album.AlbumStock;
-
-                if(qty > stockLeft)
-                {
-                    return "not enough";
-                }
-
-                int response = cartRepo.AddAlbumToCart(albumId, qty, customerId);
+                int response = cartRepo.AddServiceToCart(serviceId, qty, customerId);
                 if (response > 0) return "success";
                 else return "failed";
             }

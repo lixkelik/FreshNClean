@@ -13,9 +13,9 @@ namespace KpopZtation.View
 {
     public partial class home : System.Web.UI.Page
     {
-        ArtistController artistController = new ArtistController();
+        CategoryController artistController = new CategoryController();
         CustomerController custController = new CustomerController();
-        public List<Artist> artist;
+        public List<Category> categories;
         Customer cust;
         protected void Page_PreInit(object sender, EventArgs e)
         {
@@ -52,33 +52,33 @@ namespace KpopZtation.View
 
         protected void DataRebinding()
         {
-            artist = artistController.GetAllArtist();
+            categories = artistController.GetAllCategory();
         }
 
 
         protected void insertBtn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/View/ArtistFolder/insert_artist.aspx");
+            Response.Redirect("~/View/CategoryFolder/insert_artist.aspx");
         }
 
         protected void service1Btn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/View/ArtistFolder/detail_artist.aspx?ID=" + artist[0].ArtistID);
+            Response.Redirect("~/View/CategoryFolder/detail_category.aspx?ID=" + categories[0].CategoryID);
         }
 
         protected void service2Btn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/View/ArtistFolder/detail_artist.aspx?ID=" + artist[1].ArtistID);
+            Response.Redirect("~/View/CategoryFolder/detail_category.aspx?ID=" + categories[1].CategoryID);
         }
 
         protected void service3Btn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/View/ArtistFolder/detail_artist.aspx?ID=" + artist[2].ArtistID);
+            Response.Redirect("~/View/CategoryFolder/detail_category.aspx?ID=" + categories[2].CategoryID);
         }
 
         protected void service4Btn_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/View/ArtistFolder/detail_artist.aspx?ID=" + artist[3].ArtistID);
+            Response.Redirect("~/View/CategoryFolder/detail_category.aspx?ID=" + categories[3].CategoryID);
         }
     }
 }

@@ -16,28 +16,28 @@
             <asp:TableRow CssClass="row" runat="server">
                 <asp:TableCell ID="cell1" CssClass="cell">
                     <div>
-                        <a><%=artist[0].ArtistName%></a>
+                        <a><%=categories[0].CategoryName%></a>
                     </div>
                     <asp:Button ID="service1Btn" runat="server" Text="Details" OnClick="service1Btn_Click"/>
                 </asp:TableCell>
 
                 <asp:TableCell ID="cell2" CssClass="cell">
                     <div>
-                        <a><%=artist[1].ArtistName%></a>
+                        <a><%=categories[1].CategoryName%></a>
                     </div>
                     <asp:Button ID="service2Btn" runat="server" Text="Details" OnClick="service2Btn_Click"/>
                 </asp:TableCell>
 
                 <asp:TableCell ID="cell3" CssClass="cell">
                     <div>
-                        <a><%=artist[2].ArtistName%></a>
+                        <a><%=categories[2].CategoryName%></a>
                     </div>
                     <asp:Button ID="service3Btn" runat="server" Text="Details" OnClick="service3Btn_Click"/>
                 </asp:TableCell>
 
                 <asp:TableCell ID="cell4" CssClass="cell">
                     <div>
-                        <a><%=artist[3].ArtistName%></a>
+                        <a><%=categories[3].CategoryName%></a>
                     </div>
                     <asp:Button ID="service4Btn" runat="server" Text="Details" OnClick="service4Btn_Click"/>
                 </asp:TableCell>

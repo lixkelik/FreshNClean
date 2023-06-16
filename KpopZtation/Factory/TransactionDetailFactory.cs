@@ -8,11 +8,11 @@ namespace KpopZtation.Factory
 {
     public class TransactionDetailFactory
     {
-        public static TransactionDetail CreateTrsDetail(int trsId, int albumId, int qty)
+        public static TransactionDetail CreateTrsDetail(int trsId, int serviceId, int qty)
         {
             TransactionDetail trsDetail = new TransactionDetail();
             trsDetail.TransactionID = trsId;
-            trsDetail.AlbumID = albumId;
+            trsDetail.ServiceID = serviceId;
             trsDetail.Qty = qty;
 
             return trsDetail;

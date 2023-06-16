@@ -30,7 +30,7 @@ namespace KpopZtation.Repository
             List<TransactionDetail> trsDetailList = new List<TransactionDetail>();
             for(int i = 0; i < cartList.Count; i++)
             {
-                TransactionDetail trsDetail = TransactionDetailFactory.CreateTrsDetail(trsId, cartList[i].AlbumID, cartList[i].Qty);
+                TransactionDetail trsDetail = TransactionDetailFactory.CreateTrsDetail(trsId, cartList[i].ServiceID, cartList[i].Qty);
                 trsDetailList.Add(trsDetail);
             }
             

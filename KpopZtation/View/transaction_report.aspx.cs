@@ -58,7 +58,7 @@ namespace KpopZtation.View
 
             var headerTable = data.TransactionHeaders;
             var detailTable = data.TransactionDetails;
-            var albumTable = data.Albums;
+            var serviceTable = data.Albums;
 
             foreach (TransactionHeader t in trsHeader)
             {
@@ -72,18 +72,18 @@ namespace KpopZtation.View
                 {
                     var dRow = detailTable.NewRow();
                     dRow["TransactionID"] = td.TransactionID;
-                    dRow["AlbumID"] = td.AlbumID;
+                    dRow["ServiceID"] = td.ServiceID;
                     dRow["Qty"] = td.Qty;
                     detailTable.Rows.Add(dRow);
 
-                    var aRows = albumTable.Select("AlbumID = " + td.AlbumID);
+                    var aRows = serviceTable.Select("ServiceID = " + td.ServiceID);
                     if (aRows.Length == 0)
                     {
-                        var aRow = albumTable.NewRow();
-                        aRow["AlbumID"] = td.Album.AlbumID;
-                        aRow["AlbumName"] = td.Album.AlbumName;
-                        aRow["AlbumPrice"] = td.Album.AlbumPrice;
-                        albumTable.Rows.Add(aRow);
+                        var aRow = serviceTable.NewRow();
+                        aRow["ServiceID"] = td.Service.ServiceID;
+                        aRow["ServiceName"] = td.Service.ServiceName;
+                        aRow["ServicePrice"] = td.Service.ServicePrice;
+                        serviceTable.Rows.Add(aRow);
                     }
 
 

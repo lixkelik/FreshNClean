@@ -15,10 +15,10 @@ namespace KpopZtation.Model
     public partial class Cart
     {
         public int CustomerID { get; set; }
-        public int AlbumID { get; set; }
+        public int ServiceID { get; set; }
         public int Qty { get; set; }
     
-        public virtual Album Album { get; set; }
         public virtual Customer Customer { get; set; }
+        public virtual Service Service { get; set; }
     }
 }

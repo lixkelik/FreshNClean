@@ -4,18 +4,18 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="750785777b7f45cc912528153e4cef5a" Name="Diagram1">
-        <EntityTypeShape EntityType="DatabaseModel.Album" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DatabaseModel.Artist" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+      <Diagram DiagramId="87351e573a0141349ecbf78efaa26643" Name="Diagram1">
         <EntityTypeShape EntityType="DatabaseModel.Cart" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Category" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
         <EntityTypeShape EntityType="DatabaseModel.Customer" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Service" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
         <EntityTypeShape EntityType="DatabaseModel.TransactionDetail" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DatabaseModel.TransactionHeader" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
-        <AssociationConnector Association="DatabaseModel.FK_Album_ToArtist" ManuallyRouted="false" />
-        <AssociationConnector Association="DatabaseModel.FK_Cart_ToAlbum" ManuallyRouted="false" />
-        <AssociationConnector Association="DatabaseModel.FK_TransactionDetail_ToAlbum" ManuallyRouted="false" />
         <AssociationConnector Association="DatabaseModel.FK_Cart_ToCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_Cart_ToService" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_Service_ToCategory" ManuallyRouted="false" />
         <AssociationConnector Association="DatabaseModel.FK_TransactionHeader_ToCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_TransactionDetail_ToService" ManuallyRouted="false" />
         <AssociationConnector Association="DatabaseModel.FK_TransactionDetail_ToTransactionHeader" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>

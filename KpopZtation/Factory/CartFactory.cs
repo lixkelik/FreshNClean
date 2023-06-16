@@ -8,10 +8,10 @@ namespace KpopZtation.Factory
 {
     public class CartFactory
     {
-        public static Cart createCart(int albumId, int qty, int customerId)
+        public static Cart createCart(int serviceID, int qty, int customerId)
         {
             Cart cart = new Cart();
-            cart.AlbumID = albumId;
+            cart.ServiceID = serviceID;
             cart.CustomerID = customerId;
             cart.Qty = qty;
 

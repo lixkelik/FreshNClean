@@ -25,10 +25,10 @@ namespace KpopZtation.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Album> Albums { get; set; }
-        public virtual DbSet<Artist> Artists { get; set; }
         public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Customer> Customers { get; set; }
+        public virtual DbSet<Service> Services { get; set; }
         public virtual DbSet<TransactionDetail> TransactionDetails { get; set; }
         public virtual DbSet<TransactionHeader> TransactionHeaders { get; set; }
     }
