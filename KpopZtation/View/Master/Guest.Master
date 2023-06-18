@@ -18,9 +18,9 @@
                 </div>
             </div>
             <div class="right">
-                <asp:HyperLink ID="home" runat="server" NavigateUrl="~/View/home.aspx" Text="Home"></asp:HyperLink>
-                <asp:HyperLink ID="authornav" runat="server" NavigateUrl="~/View/Authentication/Login.aspx" Text="Login"></asp:HyperLink>
-                <asp:HyperLink ID="authornav1" runat="server" NavigateUrl="~/View/Authentication/Register.aspx" Text="Register"></asp:HyperLink>
+                <asp:HyperLink ID="home" cssClass="my-link" runat="server" NavigateUrl="~/View/home.aspx" Text="Home"></asp:HyperLink>
+                <asp:HyperLink ID="authornav" cssClass="my-link" runat="server" NavigateUrl="~/View/Authentication/Login.aspx" Text="Login"></asp:HyperLink>
+                <asp:HyperLink ID="authornav1" cssClass="my-link" runat="server" NavigateUrl="~/View/Authentication/Register.aspx" Text="Register"></asp:HyperLink>
             </div>
         </div>
 

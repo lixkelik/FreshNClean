@@ -9,7 +9,7 @@ namespace KpopZtation.Repository
 {
     public class CustomerRepo
     {
-        DatabaseEntities db = Database.getDb();
+        DatabaseEntities7 db = Database.getDb();
         public Customer GetCustomerLogin(string email, string password)
         {
             Customer cust = (from c in db.Customers

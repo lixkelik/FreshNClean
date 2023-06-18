@@ -7,67 +7,82 @@ body {
     background-color: #C8F0F2;
 }
 
+/*asp hyperlink*/
+.my-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.my-link:link,
+.my-link:visited {
+    color: #303030;
+    text-decoration: none;
+}
+
 /*Navbar*/
 .navBar {
     width: 90%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #C8F0F2;
 }
 
-    .navBar .left {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 16px;
-    }
+.navBar .left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
 
-    .navBar .companyLogo {
-        background: url('../../Assets/companyLogo.png');
-        object-fit: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 44px;
-        height: 47px;
-    }
+.navBar .companyLogo {
+    background: url('../../Assets/companyLogo.png');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 44px;
+    height: 47px;
+}
 
-    .navBar .companyName {
-        font-style: italic;
-        font-weight: 800;
-        font-size: 20px;
-        color: #689E99;
-    }
+.navBar .companyName {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 20px;
+    color: #689E99;
+}
 
-        .navBar .companyName span {
-            color: #E4843F;
-        }
+.navBar .companyName span {
+    color: #E4843F;
+}
 
-    .navBar .right {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 47px;
-    }
+.navBar .right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 47px;
+}
 
-    .navBar .right {
-        font-family: 'Lato', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 25px;
-        color: #303030;
-    }
+.navBar .right {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #303030;
+}
 
-        .navBar .right #home, #cart, #transaction, #profile {
-            text-decoration: none !important;
-        }
+.navBar .right #home, #cart, #transaction, #profile {
+    text-decoration: none !important;
+}
 
-        .navBar .right #home:hover, #cart:hover, #transaction:hover, #profile:hover {
-            color: rgba(228, 132, 63);
-            cursor: pointer;
-        }
-
+.navBar .right #home:hover, #cart:hover, #transaction:hover, #profile:hover {
+    color: rgba(228, 132, 63);
+    cursor: pointer;
+}
 
 
 .navBar #logoutBtn{
@@ -84,7 +99,7 @@ body {
     border-radius: 10px;
     border: none;
 }
-.navBar #authornav, #authornav1 {
+.navBar #authornav1 {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -97,15 +112,35 @@ body {
     background-color: #689E99;
     border-radius: 10px;
     border: none;
+    vertical-align: middle;
+}
+.navBar #authornav {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none !important;
+    color: #303030;
+    text-align: center;
+    width: 78px;
+    height: 60px;
 }
 
 /*Footer*/
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .footer {
     background-color: #689E99;
     text-align: center;
     color: #FFFFFF;
     padding-top: 10px;
     padding-bottom: 19px;
+
+    margin-top: auto;
 }
 
 .footer h1 {

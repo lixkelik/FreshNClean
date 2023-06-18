@@ -8,15 +8,15 @@ namespace KpopZtation.Repository
 {
     public class Database
     {
-        private static DatabaseEntities db = null;
+        private static DatabaseEntities7 db = null;
 
         private Database() { }
 
-        public static DatabaseEntities getDb()
+        public static DatabaseEntities7 getDb()
         {
             if(db == null)
             {
-                db = new DatabaseEntities();
+                db = new DatabaseEntities7();
             }
 
             return db;

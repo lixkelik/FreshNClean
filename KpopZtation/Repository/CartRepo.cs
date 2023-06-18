@@ -9,7 +9,7 @@ namespace KpopZtation.Repository
 {
     public class CartRepo
     {
-        DatabaseEntities db = Database.getDb();
+        DatabaseEntities7 db = Database.getDb();
         public int AddServiceToCart(int serviceId, int qty, int customerId)
         {
             Cart cart = FindCustomerSameProductCart(serviceId, customerId);

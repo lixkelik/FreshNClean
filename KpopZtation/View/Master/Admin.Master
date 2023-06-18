@@ -18,10 +18,10 @@
                 </div>
             </div>
             <div class="right">
-                <asp:HyperLink ID="home" runat="server" NavigateUrl="~/View/home.aspx" Text="Home"></asp:HyperLink>
-                <asp:HyperLink ID="transaction" runat="server" NavigateUrl="~/View/transaction_report.aspx" Text="Transaction Report"></asp:HyperLink>
-                <asp:HyperLink ID="profile" runat="server" NavigateUrl="~/View/update_profile.aspx" Text="Update Profile"></asp:HyperLink>
-                <asp:LinkButton ID="logoutBtn" runat="server" OnClick="logOut_Click" >Logout</asp:LinkButton>
+                <asp:HyperLink ID="home" cssClass="my-link" runat="server" NavigateUrl="~/View/home.aspx" Text="Home"></asp:HyperLink>
+                <asp:HyperLink ID="transaction" cssClass="my-link" runat="server" NavigateUrl="~/View/transaction_report.aspx" Text="Transaction Report"></asp:HyperLink>
+                <asp:HyperLink ID="profile" cssClass="my-link" runat="server" NavigateUrl="~/View/update_profile.aspx" Text="Update Profile"></asp:HyperLink>
+                <asp:LinkButton ID="logoutBtn" cssClass="my-link" runat="server" OnClick="logOut_Click" >Logout</asp:LinkButton>
             </div>
         </div>
 

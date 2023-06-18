@@ -1,10 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/View/Master/Guest.Master" AutoEventWireup="true" CodeBehind="update_profile.aspx.cs" Inherits="KpopZtation.View.update_profile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" href="StyleCSS/formStyle.css" />
+    <link rel="stylesheet" href="StyleCSS/updateProfile.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:Label ID="titleLbl" CssClass="title" runat="server" Text="Update Profile" Font-Bold="True" Font-Size="XX-Large" Height="70px"></asp:Label>
     <div class="center-containerUp">
-        <asp:Label ID="titleLbl" runat="server" Text="Update Profile" Font-Bold="True" Font-Size="XX-Large" Height="70px"></asp:Label>
         <div class="form-group">
             <asp:Label ID="nameLbl" runat="server" Text="Name" CssClass="label-top-left"></asp:Label>
             <asp:TextBox ID="nameTbx" runat="server" CssClass="form-control"></asp:TextBox>

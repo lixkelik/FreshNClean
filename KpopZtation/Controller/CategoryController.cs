@@ -12,7 +12,6 @@ namespace KpopZtation.Controller
     {
         CategoryHandler categoryHandler = new CategoryHandler();
 
-
         public String CheckInsertCategory(string name)
         {
             if (name == null || name == "") return "Category name must be filled!";

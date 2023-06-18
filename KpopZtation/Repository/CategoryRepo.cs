@@ -9,7 +9,7 @@ namespace KpopZtation.Repository
 {
     public class CategoryRepo
     {
-        DatabaseEntities db = Database.getDb();
+        DatabaseEntities7 db = Database.getDb();
 
         public Category FindCategoryById(int id)
         {

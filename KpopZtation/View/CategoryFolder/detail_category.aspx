@@ -26,10 +26,9 @@
             <asp:GridView ID="albumGrid" runat="server" AutoGenerateColumns="False" OnRowDataBound="albumGrid_RowDataBound" CellPadding="3" CellSpacing="2" OnRowDeleting="albumGrid_RowDeleting" OnRowEditing="albumGrid_RowEditing" OnSelectedIndexChanged="albumGrid_SelectedIndexChanged" CssClass="album-grid">
               <Columns>
                 <asp:BoundField DataField="ServiceID" HeaderText="ID" SortExpression="ServiceId" HeaderStyle-CssClass="Hide" ItemStyle-CssClass="Hide">
-<HeaderStyle CssClass="Hide"></HeaderStyle>
-
-<ItemStyle CssClass="Hide"></ItemStyle>
-                  </asp:BoundField>
+                    <HeaderStyle CssClass="Hide"></HeaderStyle>
+                    <ItemStyle CssClass="Hide"></ItemStyle>
+                </asp:BoundField>
                 <asp:BoundField DataField="ServiceName" HeaderText="Name" SortExpression="ServiceName" />
                 <asp:BoundField DataField="ServicePrice" HeaderText="Price" SortExpression="ServicePrice" />
                 <asp:BoundField DataField="ServiceDescription" HeaderText="Description" SortExpression="ServiceDescription" />

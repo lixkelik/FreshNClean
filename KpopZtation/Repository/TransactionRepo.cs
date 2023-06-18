@@ -9,7 +9,7 @@ namespace KpopZtation.Repository
 {
     public class TransactionRepo
     {
-        DatabaseEntities db = Database.getDb();
+        DatabaseEntities7 db = Database.getDb();
 
         public int AddTransaction(int customerId, List<Cart> cartList)
         {

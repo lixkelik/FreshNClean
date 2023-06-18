@@ -10,38 +10,8 @@
         </div>
         <div class="image"></div>
     </div>
-    <div class="whiteBg"></div>
-    <div class="serviceList">
-        <asp:Table ID="serviceTable" runat="server">
-            <asp:TableRow CssClass="row" runat="server">
-                <asp:TableCell ID="cell1" CssClass="cell">
-                    <div>
-                        <a><%=categories[0].CategoryName%></a>
-                    </div>
-                    <asp:Button ID="service1Btn" runat="server" Text="Details" OnClick="service1Btn_Click"/>
-                </asp:TableCell>
-
-                <asp:TableCell ID="cell2" CssClass="cell">
-                    <div>
-                        <a><%=categories[1].CategoryName%></a>
-                    </div>
-                    <asp:Button ID="service2Btn" runat="server" Text="Details" OnClick="service2Btn_Click"/>
-                </asp:TableCell>
-
-                <asp:TableCell ID="cell3" CssClass="cell">
-                    <div>
-                        <a><%=categories[2].CategoryName%></a>
-                    </div>
-                    <asp:Button ID="service3Btn" runat="server" Text="Details" OnClick="service3Btn_Click"/>
-                </asp:TableCell>
-
-                <asp:TableCell ID="cell4" CssClass="cell">
-                    <div>
-                        <a><%=categories[3].CategoryName%></a>
-                    </div>
-                    <asp:Button ID="service4Btn" runat="server" Text="Details" OnClick="service4Btn_Click"/>
-                </asp:TableCell>
-            </asp:TableRow>
-        </asp:Table>
+    <div class="categoriesList" style="margin-top: 57px; background-color:#FFFFFF; box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);">
+        <asp:Table ID="categoriesTable" runat="server" style="display: flex; justify-content: center"></asp:Table>
     </div>
+    <div class="emptySpace"></div>
 </asp:Content>

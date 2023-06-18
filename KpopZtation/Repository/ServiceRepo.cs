@@ -9,7 +9,7 @@ namespace KpopZtation.Repository
 {
     public class ServiceRepo
     {
-        DatabaseEntities db = Database.getDb();
+        DatabaseEntities7 db = Database.getDb();
 
         public int ServiceCountByCategory(int categoryId)
         {

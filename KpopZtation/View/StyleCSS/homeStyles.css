@@ -4,16 +4,17 @@
 /*banner*/
 .banner {
     width: 90%;
-    height: 687px;
-    background-color: #C8F0F2;
     margin: 0 auto;
     margin-top: 20px;
     padding-left: 10px;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.companySlogan{
+    width: 640px;
 }
 
 .companySlogan h1 {
@@ -23,7 +24,7 @@
     font-weight: 800;
     font-size: 80px;
     color: #303030;
-    width: 60%;
+    width: 90%;
 }
 
 .companySlogan p {
@@ -31,50 +32,27 @@
     font-weight: 400;
     font-size: 30px;
     color: #303030;
-    width: 70%;
+    width: 99%;
 }
 
 .banner .image {
     background: url('../../Assets/bannerImage.png');
-    width: 600px;
+    width: 450px;
     height: 420px;
     object-fit: contain;
     background-repeat: no-repeat;
     margin-right: 10px;
 }
 
-.whiteBg {
-    height: 217px;
-    background-color: #FFFFFF;
+.checkDetails.btn:hover{
+    cursor: pointer;
 }
 
-/*service list*/
-.serviceList {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
-    border-radius: 20px;
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 90%;
-    height: 340px;
-    position: absolute;
-    top: 650px;
-    left: 70px;
+/*empty space*/
+.emptySpace {
+    height: 50px;
+    width: 100%;
+    background-color: #C8F0F2;
 }
 
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40px;
-    margin-left: 50px;
-    gap: 70px;
-    flex-wrap: wrap;
-}
 
-.cell {
-    width: 240px;
-    height: 253px;
-    background: #EDFCFF;
-    border-radius: 20px;
-}

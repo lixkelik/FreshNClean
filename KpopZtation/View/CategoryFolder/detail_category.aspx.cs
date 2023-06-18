@@ -17,7 +17,7 @@ namespace KpopZtation.View.CategoryFolder
         CategoryController categoryController = new CategoryController();
 
         Customer cust;
-        Category category;
+        protected Category category;
         int categoryId;
 
         protected void Page_PreInit(object sender, EventArgs e)
@@ -64,8 +64,6 @@ namespace KpopZtation.View.CategoryFolder
                         insertLbl.Visible = true;
                     }
                 }
-                
-
                 
                 category = categoryController.GetCategoryById(categoryId);
 
