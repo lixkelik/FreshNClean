@@ -65,10 +65,10 @@ namespace KpopZtation.View.ServiceFolder
 
                 service = serviceController.GetServiceById(serviceId);
 
-                albumNameLbl.Text = $"Album name: {service.ServiceName}";
+                albumNameLbl.Text = $"Service name: {service.ServiceName}";
                 descLbl.Text = $"Description:\n{service.ServiceDescription}";
                 priceLbl.Text = $"Price: {service.ServicePrice}";
-                
+                albumImg.ImageUrl = "~/Assets/logo.png";
             }
         }
 

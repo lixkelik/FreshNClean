@@ -6,8 +6,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="containerAlbm">
         <div class="product-card">
-            <asp:Label ID="titleLbl" runat="server" Text="Album Detail" CssClass="product-title" Font-Bold="True"></asp:Label>
-            <asp:Image ID="albumImg" runat="server" CssClass="product-image" />
+            <asp:Label ID="titleLbl" runat="server" Text="Service Detail" CssClass="product-title" Font-Bold="True"></asp:Label>
+            <asp:Image ID="albumImg" runat="server" CssClass="product-image"/>
             <div class="product-description">
                 <asp:Label ID="albumNameLbl" runat="server" Text=""></asp:Label>
             </div>
